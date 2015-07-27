@@ -4,8 +4,15 @@
   <title>WDInstagram</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <!-- <link rel="stylesheet" type="text/css" href="../assets/style.css"> -->
   <%= csrf_meta_tags %>
 </head>
+<div class="container">
+ <header>
+   <h1><a href="/">WDInstagram</a></h1>
+   <a class="new-post" href="/entries/new">New Post</a>
+ </header>
 <body>
 
 <%= yield %>
